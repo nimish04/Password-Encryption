@@ -72,7 +72,8 @@ def Driver():
 	print('Salt length: ',len(salts[0]),len(salts[1]),len(salts[2]),len(salts[3]))
 	# print(len(b1),len(b2),len(b3),len(b4))
 
-
+        # AES in CBC mode 
+	
 	aes=AESCipher('pass')
 	c1=aes.encrypt(b1)
 	print('c1: ',(c1.hex()))
